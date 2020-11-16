@@ -1,0 +1,102 @@
+
+16-11-2020:
+===========
+
+Good Morning to All:
+--------------------
+	-> Sublime Text Editor [geany,atom,vs code]
+	-> Python
+	
+Front end: [static]
+	HTML5,CSS3,Javascript,Jquery,Ajax
+	
+Back end: [Dynamic]
+	Java,python,php,.Net
+	
+Databases:[storing some data]
+	Mysql,Postregsql,Mongodb,Nosql
+	
+Django:
+=======
+	-> Web Application framework to create web apps
+	-> Web technologies [HTML,CSS,jquery] -> site
+	-> Free source to create web apps 
+	-> framework => Collection of packages and modules
+	-> Class,objects,variables,procedural and object oreinted
+	-> to reduce the code[dry => dont run yourself]
+	-> To create web applications easily with secure
+	-> bottle,flask etc.,
+	-> Administration site -> inbuilt
+	-> MVC -> support and it follows MVT
+
+Django Installation:
+====================
+
+	-> Python version
+		-> python path => environment variables -> add
+		-> cmd -> python => >>> 
+		-> cmd -> python --version => 3.xxx
+			   -> python -V
+	-> Third party packages installation
+		-> pip => python/scripts/..
+	-> for installation of django
+		-> pip install django
+				or
+		-> pip install django==3.xx
+		-> pip install django==2.xx
+	-> To check django version
+		-> django-admin --version
+				or
+		-> python -> shell
+			-> import django
+			-> print(django.__version__)
+
+Django Project Creation:
+========================
+	=> select particular path to create a project
+	=> open cmd prmpt in the location
+	=> to create a project we need to type a command as
+		**** Project Creation Syntax
+		=> django-admin startproject "project name"
+		-> django-admin startproject djinternship
+			-> djinternsip => [folder] -> Admin App
+			-> manage.py => .py file
+	-> manage.py -> servies will be started 
+			-> Creation of App
+			-> settings
+			-> migrations
+			-> running of server
+	-> to display all services we need to type the cmd as
+		=> manage.py
+			
+Django Running environment:
+===========================
+	-> First navigate to manage.py file path location
+		-> url -> cmd and hit enter
+		-> server run cmd to be typed such as
+			-> python manage.py runserver
+			           or
+			-> python manage.py runserver portnumber
+					   or
+		    -> manage.py runserver
+	-> To check it in browser
+		-> just type the url such as http://127.0.0.1:8000/
+						or
+		-> By default out local server ip is:127.0.0.1
+		-> our default name for local server is:
+			=> "localhost:8000"
+			
+Django Files:
+=============
+	-> While creating a project we had observed some files in a [Admin]folder.
+	-> __init__ => It states that interpreter to consider as python file.  
+	-> asgi => Asynchronous gateway interface -> server deployment 
+	-> settings => main configurations[html,css,js,images,mail,app]
+	-> urls => admin -> access, admin -> user url
+	-> wsgi => Web socket gateway interface -> development
+
+
+
+
+
+
