@@ -1,0 +1,198 @@
+
+16-11-2020:
+===========
+
+Good Morning to All:
+--------------------
+	-> Sublime Text Editor [geany,atom,vs code]
+	-> Python
+	
+Front end: [static]
+	HTML5,CSS3,Javascript,Jquery,Ajax
+	
+Back end: [Dynamic]
+	Java,python,php,.Net
+	
+Databases:[storing some data]
+	Mysql,Postregsql,Mongodb,Nosql
+	
+Django:
+=======
+	-> Web Application framework to create web apps
+	-> Web technologies [HTML,CSS,jquery] -> site
+	-> Free source to create web apps 
+	-> framework => Collection of packages and modules
+	-> Class,objects,variables,procedural and object oreinted
+	-> to reduce the code[dry => dont run yourself]
+	-> To create web applications easily with secure
+	-> bottle,flask etc.,
+	-> Administration site -> inbuilt
+	-> MVC -> support and it follows MVT
+
+Django Installation:
+====================
+
+	-> Python version
+		-> python path => environment variables -> add
+		-> cmd -> python => >>> 
+		-> cmd -> python --version => 3.xxx
+			   -> python -V
+	-> Third party packages installation
+		-> pip => python/scripts/..
+	-> for installation of django
+		-> pip install django
+				or
+		-> pip install django==3.xx
+		-> pip install django==2.xx
+	-> To check django version
+		-> django-admin --version
+				or
+		-> python -> shell
+			-> import django
+			-> print(django.__version__)
+
+Django Project Creation:
+========================
+	=> select particular path to create a project
+	=> open cmd prmpt in the location
+	=> to create a project we need to type a command as
+		**** Project Creation Syntax
+		=> django-admin startproject "project name"
+		-> django-admin startproject djinternship
+			-> djinternsip => [folder] -> Admin App
+			-> manage.py => .py file
+	-> manage.py -> servies will be started 
+			-> Creation of App
+			-> settings
+			-> migrations
+			-> running of server
+	-> to display all services we need to type the cmd as
+		=> manage.py
+			
+Django Running environment:
+===========================
+	-> First navigate to manage.py file path location
+		-> url -> cmd and hit enter
+		-> server run cmd to be typed such as
+			-> python manage.py runserver
+			           or
+			-> python manage.py runserver portnumber
+					   or
+		    -> manage.py runserver
+	-> To check it in browser
+		-> just type the url such as http://127.0.0.1:8000/
+						or
+		-> By default out local server ip is:127.0.0.1
+		-> our default name for local server is:
+			=> "localhost:8000"
+			
+Django Files:
+=============
+	-> While creating a project we had observed some files in a [Admin]folder.
+	-> __init__ => It states that interpreter to consider as python file.  
+	-> asgi => Asynchronous gateway interface -> server deployment 
+	-> settings => main configurations[html,css,js,images,mail,app]
+	-> urls => admin -> access, admin -> user url
+	-> wsgi => Web socket gateway interface -> development
+
+17-11-2020:
+===========
+
+	Good Morning to All
+	
+	=> Django installation
+	=> Project Creation
+	=> All created files -> description -> [Admin folder,manage.py -> services] 
+	=> Project[app] -> run
+	
+	
+	=> Userapp creation,files,configure,run -> urls
+	=> MVC and MVT
+	=> Request and response
+	
+User App Creation:
+==================
+	-> We have to navigate into the path of a project
+	-> open cmd and then we need to pass a command to create an user app ie., userdefined
+	-> cmd pmpt
+		=> django-admin startapp "userappname"
+		=> djanog-admin startapp djpi
+	
+	-> Userapp created files
+		=> __init__ -> It will be considered to be as a python file for an interpreter
+		=> admin -> view,models
+		=> apps -> app has some specific permissions to run in server or not
+		=> models -> Database,tablename,fields [datatypes] 
+		=> test -> unit testing,black box testing
+		=> views -> class,function,method => work
+
+MVC:
+===	
+	-> M = Model => Database
+	-> V = View => html,css,js,jquery
+	-> C = Controller => backend -> [php,java,.net]
+	
+MVT:
+===	
+	-> M = Model => Databases
+	-> V = View[urls,views => controller] => backend -> [python]
+	-> T = Template => [DTL = Django Template Language] Html,css,js,jquery
+	
+Userapp configurations:
+=======================
+	-> Admin app =[projectname folder] -> settings.py -> userapp => Installed apps => configure
+	-> urls.py => userdefined url have to be created
+		syntax for url patterns:
+		-------------------------
+		from package import modulename
+		path("url to be typed in a browser/",module.functionaname,name="userdefinedname"),
+		Ex:
+		from djpi import views
+		path("hel/",views.functioname,name="h"),
+	
+	-> views.py => imported HttpResponse from djangottp
+		-> function => return with something message to be displayed for a user.
+		Syntax:
+		-------
+			from django.http import HttpResponse
+			
+			def hel(request):
+				return HttpResponse("Hi Welcome")
+			
+		-> 1. Configure our userapp in settings.py
+		-> 2. Setted url in urls.py from admin app,import module
+		-> 3. Module => functionality to work while accessing the particular url
+		-> 4. function has been created in views
+		-> 5. HttpResponse import
+		
+	=> localhost:8000/hi/ramu
+		Output:
+				
+				hi ramu welcome to Django internship 	
+	-> urls.py:
+		-> path("hll/<str:n>/",views.hlp),
+		
+	-> views.py:
+		-> def hlp(r,n):
+				return HttpResponse("Hi "+n+"Welcome to Django Internship")
+		=> return HttpResponse("Hi {} Welcome to Django Internship".format(n))
+	
+Task:
+====
+	1.
+		localhost:8000/2
+			
+		output:
+				
+			2 x  1 = 2
+			2 x  2 = 4
+			|   |    |
+			2 x 10 = 20
+	
+	
+
+
+
+
+
+
