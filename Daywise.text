@@ -189,8 +189,59 @@ Task:
 			|   |    |
 			2 x 10 = 20
 	
-	
+18-11-2020:
+===========
 
+	Good Morning to All..
+	
+	def srt(k,o):
+		s=[] 
+		//logic
+		return s
+	
+	h = [34,5,6,12,8]
+	m = 56
+	z = srt(h,m)
+	for j in z:
+		print(j,end=",")
+	
+	list,string,tuple,set,dictionary => Data Structures or Iterators
+	
+	
+Dynamic Url:
+============
+	-> single parameter value to an url
+		syntax:
+		-------
+		path("pathurl/parameter/",views.functioname,name="namevalue")
+		Ex:
+		path("tbl/<int:y>/",views.tble),
+		
+	-> two parameter values to an url
+		Ex:
+		path("rcd/<str:name>/<int:age>/",views.record),
+		
+	-> two or more as like as two parameter values to an url
+	
+	def record(req,name,age):
+		m = "Hi your name is: {}<br/>Your age is: {}<br/>".format(name,age)
+		p = "Your sal is: "+str(sal)
+	return HttpResponse(m+p)
+	
+	
+	HttpResponse => HTML tags
+				 => CSS
+				 => Js
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 

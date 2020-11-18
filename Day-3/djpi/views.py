@@ -1,0 +1,31 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+
+def he(request):
+	# print("Hello Welcome")
+	return HttpResponse("Hi Welcome to Django Internship")
+
+def hlp(req,n):
+	return HttpResponse("Hi {} Welcome to Django Internship".format(n))
+
+def tble(request,t):
+	# print(t,type(t))
+	y = []
+	for p in range(1,11):
+		# print("{} x {:02} = {:02}".format(t,p,t*p))
+		u = "{} x {:02} = {:02}".format(t,p,t*p)+"<br/>"
+		y.append(u)
+	# print(y)
+	return HttpResponse(y)
+
+def record(request,age,name,sal=2300):
+	return HttpResponse("Hi Your name is: {}<br/>Your age is: {}<br/> Your salary is: {}".format(name,age,str(sal)))
+	# m = "Hi your name is: {}<br/>Your age is: {}<br/>".format(name,age)
+	# p = "Your sal is: "+str(sal)
+	# return HttpResponse(m+p)
+
+def stdnt(request,prc,name,age):
+	t = "<h5 style='background-color:green;color:white;font-size:20px'>Hi Welcome {}</h5>".format(name)
+	u = "<h4>Your age is: {}</h4>".format(age)
+	return HttpResponse(t+u+"<script>alert('Hi')</script>")
