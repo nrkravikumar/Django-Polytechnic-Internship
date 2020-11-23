@@ -233,6 +233,96 @@ Dynamic Url:
 				 => CSS
 				 => Js
 	
+23-11-2020:
+===========
+	Good Morning to All.
+		
+	Inline elements -> span,i,b
+	block elements -> div,h
+	
+	Hi Welcome <span style="?"> Raju </span> Your age is <span style="?">24</span>
+	
+	
+	Templates: -> .html[saves in folder]
+	
+	django 2.0 we need to configure template path to acces all .html files to that particular project
+	
+	views:
+	======
+	d = {key:value}
+	return render(request,"path of .html",{})
+	
+	DTL:[Django Template Language]
+	=============================
+	
+	variable:
+	=========
+	return render(re,'home.html',{'a':12}) -> {} => .format
+	
+	your value is: {{a}} => .html
+	
+	Conditional Statements:
+	=======================
+	-> if
+	syntax:
+		{% if condition %}
+			//stmnt
+		{% endif %}
+	-> if-else
+	syntax:
+		{% if condition %}
+			//stmnt-1
+		{% else %}
+			//stmnt-2
+		{% endif %}
+	-> nested if
+	syntax:
+		{% if condition %}
+			//stmnt-1
+		{% elif condition %}
+			//stmnt-2
+		{% elif condition %}
+			//stmnt-3
+			|   |   |
+		{% elif condition %}
+			//stmnt-n	
+		{% else %}
+			//stmnt-2
+		{% endif %}
+	
+	Loops:
+	======
+	-> for,while
+	
+	-> for 
+	syntax:
+		{% for iterationvariable in iterator %}
+			{{iterationvariable}}
+			//stmnts
+		{% endfor %}
+	
+	
+	url -> views -> html
+	
+	templates folder in our project
+	
+	djinpoly -> project name
+		djpi -> app name
+		=> templates
+			=> prjc -> user defined name
+				=> sample.html
+	
+	return render(request,'prjc/sample.html',{})
+	
+	Registration Page: -> inline style,internal
+	-> data => submit -> 
+	
+	url -> views -> register.html -> data 
+		   views <------------------ data	
+		   views -> display.html
+	
+	
+
 	
 	
 	
