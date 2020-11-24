@@ -322,6 +322,69 @@ Dynamic Url:
 		   views -> display.html
 	
 	
+24-11-2020:
+==========
+	Good Morning to All..
+	
+	
+	form => data => database[store]
+	
+		input : values => fill
+		submit : values
+		action : True
+	
+	Methods:
+	-------
+	- GET => data can be stored
+		  => Fetching of data from database
+		  => values can be visible in url
+		  => some limit of data can be passed [250 characters]
+		  
+	- POST => data can be stored
+		   => secure format of data can be used
+		   => Complex data can be transfered from form
+		   
+	Login Page: [css]
+	
+	Username : raju
+	password :
+	
+	username == raju password == 123
+	
+		hi user raju
+		
+		user name is incorrect
+		password is incorrect
+	
+	CSS:[tag,*,#]
+	= Inline -> within a tag[ style="property: value"]
+	= Internal -> within a head tag[we need to use style tag]
+		syntax:
+			<style>
+			h1,h5 
+			{
+				property: value;
+			}
+			</style>
+	= External -> propert: value => styling -> sample.css
+	<link rel="stylesheet" href="path of .css file">
+	
+	Static:[CSS,Js,Jquery,Images]
+	=============================
+	
+	userdefined appname:
+		-> static
+			=> css
+				-> sample.css
+			=> js
+				-> sample.js
+			=> images
+				-> userdefined images
+	
+	
+	
+	
+	
 
 	
 	
