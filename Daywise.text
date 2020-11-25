@@ -380,23 +380,42 @@ Dynamic Url:
 				-> sample.js
 			=> images
 				-> userdefined images
-	
-	
-	
-	
-	
 
+25-11-2020:
+===========
+	Good Morning to All
+	
+	CSS
+	jquery
+	js
+	
+	static
+		- css
+			- sample.css
+		- js
+			- demo.js
+		- images
+			- first.jpg
+			
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/sample.css'%}">
+	<script type="text/javascript" src="{% static 'js/demo.js'%}"></script>
+	<img src="{% static 'images/first.jpg' %}">
 	
 	
-	
-	
-	
-	
-	
-	
-	
+	Bootstrap:
+	==========
+	- Reponsiveness, beautification of site
+	- Online
+		- internet => url access
+	- Offline
+		- download => static -> css,js,images,jquery
 
-
-
-
-
+	djinpoly: [Project folder]
+		- djinpoly -> [Admin app] -> urls,settings
+		- djpi -> [own html,css,] => userapp 
+		- djboot -> userapp => [bootstrap]
+	
+	m,p => points => class -> style 
+	
+	
