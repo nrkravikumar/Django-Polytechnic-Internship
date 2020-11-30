@@ -418,4 +418,51 @@ Dynamic Url:
 	
 	m,p => points => class -> style 
 	
+
+30-11-2020:
+===========
+	Good Morning to All.
+	
+	Models -> To store/retrieve/update/delete the data in databases
+	
+	Class Student(models.Model):
+		name = models.Charfield()
+		age = models.IntegerField()
+	
+	Syntax:
+		projectname_classname
+			djpin_Student -> Tablename
+			name,age => Fields
+	
+	makemigrations -> interfacing file -> create
+	migrate -> updates model class to a database
+	
+	Class Student(models.Model):
+		name = models.CharField()
+		rollno = models.CharField()
+		branch = models.CharField()
+		year = models.IntegerField()
+		
+	url => views => .html => data
+		   views <= data
+		   views => models 	
+	
+	primary,secondary,danger,success,warning,info,light,dark
+	margin:
+		mx => left,right
+		my => top,bottom
+		m  => all directions
+		
+		m-4 p-4 => points
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
