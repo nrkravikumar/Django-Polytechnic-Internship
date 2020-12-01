@@ -455,6 +455,32 @@ Dynamic Url:
 		
 		m-4 p-4 => points
 		
+		
+01-12-2020:
+===========
+	Good Morning to All..
+	
+	url => views => .html => views => models => .html
+	from django.shortcuts import redirect
+	return redirect('urlname/')
+	
+	path('urlname/',views.functioname,name="?")
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
