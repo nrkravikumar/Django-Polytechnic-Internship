@@ -466,6 +466,41 @@ Dynamic Url:
 	
 	path('urlname/',views.functioname,name="?")
 	
+02-12-2020:
+===========
+	Good Morning to All...
+	
+	own registration form [.html]
+		- view
+		- models[database]
+		- html
+		
+	Forms.py:
+	=========
+	
+	models => fields
+	
+	automatic generation[restrict]
+	
+	url -> views -> forms -> model
+					form <- model
+					form -> views -> .html -> data
+					views <- data
+					views -> models
+	
+	Widgets:[Bootstrap Styling] => Forms:
+	=====================================
+	from django import forms
+	
+	widgets = {
+	"name":forms.TextInput(attrs = {
+	"class":"form-control",
+	"placeholder":"Enter Your name"
+	})
+	}
+	
+	
+	
 	
 	
 	
