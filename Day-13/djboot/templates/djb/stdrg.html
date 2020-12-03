@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container col-md-6">
+		<div class="card mt-4 shadow-md">
+			<h2 class="p-3 bg-dark text-white m-3 border rounded text-center">Student Registration</h2>
+			<form class="p-3 mx-3 border rounded mb-3" style="background-color: cadetblue" method="post">
+				{% csrf_token %}
+				<input type="text" name="n" class="form-control" placeholder="Enter Your name" required><br/>
+				<input type="text" name="rl" class="form-control" placeholder="Enter Your Roll Number" required><br/>
+				<input type="text" name="brc" class="form-control" placeholder="Enter Your Branch Name" required><br/>
+				<input type="number" name="yr" class="form-control" placeholder="Enter Your Year" min="1" max="4" required><br/>
+				<input type="submit" name="Submit" class="btn btn-block btn-success">
+			</form>	
+		</div>
+	</div>
+</body>
+</html>

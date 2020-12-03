@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Students Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container col-md-5">
+		<div class="card mt-5">
+			<h2 class="bg-dark text-light mx-4 my-2 p-3 border rounded text-center">Delete User </h2>
+			<form method="POST" class="mx-4 my-2">
+				{% csrf_token %}
+				Are You Sure you want to Delete {{ft.name}}?<br/>
+				<input type="submit" class="btn btn-success" value="Confirm">
+				<a href="{% url 'ds' %}" class="btn btn-primary">Cancel</a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
