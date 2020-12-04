@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Students View Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container col-md-7">
+		<div class="jumbotron mt-3">
+			<h2>User Profile {{vi.id}} Details</h2>
+			<h5>Name: {{vi.name}} </h5>
+			<h5>Roll Number: {{vi.rollno}} </h5>
+			<h5>Branch: {{vi.branch}} </h5>
+			<h5>Year: {{vi.year}} </h5>
+		</div>
+		<a href="{% url 'ds' %}" class="btn btn-primary">Back</a>
+	</div>
+</body>
+</html>

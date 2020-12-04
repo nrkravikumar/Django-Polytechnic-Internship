@@ -509,6 +509,34 @@ Dynamic Url:
 	View -> Display
 	Update -> Forms.py
 	Delete -> .html -> confirm 
+
+04-12-2020:
+===========
+	Good Morning to All..
+	
+	project:
+		admin app
+			> urls.py
+			  
+			  views -> views
+			  views -> alias -> v 
+			  frstapp => path(views.functionaname)
+			  secondapp => path(v.functioname)
+			  
+	project:
+		admin app
+			> urls.py
+			
+	Projectname:
+	
+	-> DjPrjct => Projectname
+		-> UsApp => Userdefined App
+	
+	
+	
+	
+
+
 	
 	
 	
