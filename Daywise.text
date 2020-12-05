@@ -531,6 +531,24 @@ Dynamic Url:
 	
 	-> DjPrjct => Projectname
 		-> UsApp => Userdefined App
+
+05-12-2020:
+===========
+	Good Morning to All.....
+	
+	
+	navbar -> bootstrap -> site names -> rename
+	
+	base.html => header => links
+	navabar.html => links
+	html => body
+	
+	extends,include,dtl -> title,content
+	
+	
+	Registration => models => table => forms -> views => html
+	
+	 
 	
 	
 	
