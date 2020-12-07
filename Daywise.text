@@ -548,8 +548,26 @@ Dynamic Url:
 	
 	Registration => models => table => forms -> views => html
 	
-	 
+07-12-2020:
+===========
+	Good Morning to All...
+
+	card
+	<table>
+	<tr>
+	<td><h2>User Registration</h2></td>
+	</tr>
+	{% for j in k %}
+	<tr>
+		<td>{{j}}</td>
+	</tr>
+	{% endfor %}
+	<tr>
+	<td><input type="button"></td>
+	</tr>
+	</table>
 	
+	password => sha algorithm(password1 + password2)
 	
 	
 	
