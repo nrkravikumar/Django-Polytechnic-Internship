@@ -1,0 +1,14 @@
+{% extends 'sa/base.html' %}
+{% block title %} Login {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card col-md-6 mx-auto mt-5 shadow-lg">
+		<h2 class="bg-secondary text-white text-center border rounded mt-2 p-2">Login</h2>
+		<form class="mx-auto" style="width:100%" method="POST">
+			{% csrf_token %}
+			{{form.as_p}}
+			<input type="submit" name="Submit" class="btn btn-block btn-success mb-2">
+		</form>
+	</div>
+</div>
+{% endblock %}

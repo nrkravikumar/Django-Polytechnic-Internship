@@ -569,6 +569,16 @@ Dynamic Url:
 	
 	password => sha algorithm(password1 + password2)
 	
+
+08-12-2020:
+===========
+	Good Morning to All..
+	
+	Authentication pages after login and logout
+	Conditional statemnts in navbar only for authenticated dpersons
+	
+	
+	
 	
 	
 

@@ -1,0 +1,11 @@
+{% extends 'sa/base.html' %}
+{% block title %} Logout {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card col-md-5 mt-5 mx-auto shadow-lg">
+		<h2 class="bg-warning text-white text-center mt-2 p-2">Logged Out</h2>
+		<h4>Are you sure you want to Login again?</h4>
+		<a href="{% url 'log' %}" class="btn btn-primary">Login Again</a>
+	</div>
+</div>
+{% endblock %}
