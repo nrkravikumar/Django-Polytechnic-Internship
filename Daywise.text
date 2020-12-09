@@ -575,40 +575,59 @@ Dynamic Url:
 	Good Morning to All..
 	
 	Authentication pages after login and logout
-	Conditional statemnts in navbar only for authenticated dpersons
+	Conditional statements in navbar only for authenticated persons view
 	
+09-12-2020:
+===========
+	Good Morning to All...
 	
+	decorator:
+	==========
+	urls.py:
+	--------
+	path('dash/',v.dashboard,name="dsh")
 	
+	views.py:
+	----------
+	from django.contrib.auth.decorators import login_required
 	
-	
+	@login_required
+	def dashboard(request):
+		return
+		
+	navabar.html
+	============
+	{% if not user.is_authenticated %}
+		// links
+	{% else %}
+		// links
+	{% endif %}
 
-
+	Mail Sending:
+	=============
 	
+		-> 500 => mails -> per/day
+		
+	Google Account
+		-> Account
+			-> security
+				-> less secure app => On
 	
+	email -> configure => emailid,password
 	
+	settings.py:
+	------------
 	
+	EMAIL_USE_TLS = True
+	EMAIL_HOST = "smtp.gmail.com"
+	EMAIL_PORT = 587
+	EMAIL_HOST_USER = "apssdcpolytechnicinternship2@gmail.com"
+	EMAIL_HOST_PASSWORD = "xxxxxxxx"
 	
+	views.py:
+	=========
+	from DjPrjct import settings
+	from django.core.mail import send_mail
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	settings.EMAIL_HOST_USER
+	send_mail(subject,message,emailconfigure,[to])
