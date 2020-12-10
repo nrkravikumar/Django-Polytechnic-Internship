@@ -631,3 +631,69 @@ Dynamic Url:
 	
 	settings.EMAIL_HOST_USER
 	send_mail(subject,message,emailconfigure,[to])
+
+10-12-2020:
+===========
+	Good Morning to All...
+	
+	mail => concept => 1 single
+	
+	views.py: [Multiple users]
+	==========================
+	rec = request.POST['sndml'].split(",")
+	
+	s = send_mail(subject,message,fixed username,rec)
+	
+	views.py:[Existing users database]
+	==================================
+	empty fields,user => login => mail => x
+	
+	@login_required
+	def mailsnd(request):
+		pq = user.objects.values_list("email",flat=True)
+		if request.method == "POST":
+			# rec = request.POST['sndml'].split(",")
+			# print(rec)
+			rec = []
+			adml = request.user.email
+			rs = list(filter(None,pq)
+			for m in rs:
+				if m=="" or m==adml:
+					continue
+				else:
+					rec.append(m)
+			print(rec)
+			sub = request.POST['subject']
+			msg = request.POST['messg']
+			sd = settings.EMAIL_HOST_USER
+			t = send_mail(sub,msg,sd,rec)
+			if t == 1:
+				return redirect("/ml")
+			return HttpResponse("Didnt send mail to particular person")
+		return render(request,'sa/mailsending.html')
+		
+	Dropdowns,Profile page,updateprofile => forms [profile updation]
+	
+	Messages: => updates,data limit, => notification
+	=========
+	
+	from django.contrib import messages
+	
+	messages.success(request,"msg")
+	
+	success -> green
+	debug -> 
+	warning ->
+	
+	html:
+	
+	{% if messages %}
+	{% for m in messages %}
+	<div class="alert alert-{{m.tags}} alert-dismissible">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<strong>{{m}}</strong>
+	</div>
+	{% endfor %}
+	{% endif %}
+	
+	Profile => Image Uploads [File uploading]
