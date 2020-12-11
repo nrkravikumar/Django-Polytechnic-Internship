@@ -697,3 +697,28 @@ Dynamic Url:
 	{% endif %}
 	
 	Profile => Image Uploads [File uploading]
+	
+11-12-2020:
+===========
+	Good Morning to All...
+	
+	
+	own table => models => class
+	
+	existing -> model => model
+
+	profile => update -> OneToOneField()
+	
+	OneToManyField()
+	
+	ManyToManyField()
+	
+	ManyToOneField()
+	
+	signals:=> model -> own => Existing model => link
+
+		new user => User => ownprofile[img,age] 
+				 => id   => id
+				 
+	image => ImageField() => pip install pillow
+	files => FileField()
