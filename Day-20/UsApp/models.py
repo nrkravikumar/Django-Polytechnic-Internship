@@ -7,7 +7,7 @@ from django.db.models.signals import post_save
 
 class ImPfle(models.Model):
 	u = models.OneToOneField(User,on_delete=models.CASCADE)
-	im = models.ImageField(upload_to="Profile/",null=True,default="brand.jpg")
+	im = models.ImageField(upload_to="Profile/",null=True,default="avatar.png")
 	age = models.IntegerField(default=18) 
 
 @receiver(post_save,sender=User)

@@ -132,4 +132,4 @@ EMAIL_HOST_PASSWORD = "xxxxxxx"
 
 
 MEDIA_URL ="/images/"
-MEDIA_ROOT_URL = os.path.join(BASE_DIR,'UsApp/static/')
+MEDIA_ROOT = os.path.join(BASE_DIR,'UsApp/static/images/')
