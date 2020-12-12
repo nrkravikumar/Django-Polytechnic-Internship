@@ -1,0 +1,18 @@
+{% extends 'sa/base.html' %}
+{% block title %} Mail Sending {% endblock %}
+{% block content %}
+<div class="container col-md-5 mx-auto">
+	<div class="card mt-5 shadow-lg">
+		<h2 class="mb-1 mt-3 p-2 mx-2 bg-dark border rounded text-white text-center">Mail sending</h2>
+		<div class="card-body mt-1">
+			<form method="post">
+				{% csrf_token %}
+			<!-- <input type="text" name="sndml" placeholder="Enter Sender Mail" class="form-control my-2"> -->
+			<input type="text" name="subject" placeholder="Enter your Subject" class="form-control my-2">
+			<textarea class="form-control" placeholder="Enter your Message" rows="4" name="messg"></textarea>
+			<input type="submit" value="Send" class="btn btn-success btn-block my-2">
+		</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

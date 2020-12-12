@@ -722,3 +722,43 @@ Dynamic Url:
 				 
 	image => ImageField() => pip install pillow
 	files => FileField()
+
+12-12-2020:
+===========
+	- Drweabacks in SQLite3
+		- if any modifications are made in browser 
+			we may not effect in db(it will shows 'db is lock')
+		- it has less storage space(it is preforble for practice only)
+		
+	- Mysql Connections:
+			- for making mysql db connection ,
+			we have to iinstall `mysqlclient`
+			-mysqlclient is a external module in python
+			- this mysqlclient will acts like a driver
+			-for installing mysqlclient,we have to use a cmd
+				`pip install mysqlclient`
+			- after installation,we have to make 
+				few configurations inside settings.py
+				`DATABASES = {
+								'default': {
+								'ENGINE': 'django.db.backends.mysql',
+								'NAME': 'djproject',
+								'USER': 'root',
+								'PASSWORD':''.
+								'HOST':'',
+								'PORT':'',
+										}
+								}`
+				- once changes is done, we have 
+				to run makemigrations and migrate cmds 
+				to create tables iinside our db.
+
+
+
+
+
+
+
+
+
+
