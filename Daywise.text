@@ -753,6 +753,30 @@ Dynamic Url:
 				to run makemigrations and migrate cmds 
 				to create tables iinside our db.
 
+14-12-2020:
+===========
+	## Project Requirements:
+		- you have to bulid a new project with name of 'worklog'
+		- then  create app with name of 'dailyworkstatus'
+		- inside project you have to make registration 
+			form for user(have to access USER Model).
+			- registration form need to include 
+				- FirstName,
+				- LastName,
+				- User Name,
+				- Password,
+				- Mail Id.
+			- after registration u have to send a mail 
+				to registered user with his name and password,
+				then show him conformation message 
+				inside login.html page.
+			- next you have to make a profile form for user
+				- user image,
+				- Mobile Numbber,
+				- DOB,
+				- Gender.
+			
+			
 
 
 
