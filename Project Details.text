@@ -1,0 +1,28 @@
+
+15-12-2020:
+===========
+	Good Morning to All....
+	
+	Project Name: Worklog
+		AppName: DailyWorkStatus
+		
+	project creation:
+	=================
+		-> django-admin startproject Worklog
+		
+	AppName Creation:
+	=================
+		-> we need to navigate where manage.py is existing
+		-> manage.py startapp DailyWorkStatus
+		
+	Run:
+	====
+		-> manage.py runserver
+	
+	App Configure:
+	==============
+		-> settings.py
+			-> INSTALLED_APPS = [
+			'DailyWorkStatus',
+			]
+	
