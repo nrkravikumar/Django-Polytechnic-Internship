@@ -30,6 +30,6 @@ def register(request):
 				p.save()
 				return HttpResponse("Mail Sent")
 			return HttpResponse("Mail not sent")
-			# print(p.username,p.email)
+			# print(p.username,p.email) to know the username and emailid
 	y = Usregis()
 	return render(request,'html/register.html',{'t':y})
