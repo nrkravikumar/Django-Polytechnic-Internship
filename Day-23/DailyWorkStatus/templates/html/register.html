@@ -1,0 +1,22 @@
+{% extends 'html/base.html' %}
+{% block title %}Registration{% endblock %}
+{% block content %}
+<div class="container mt-3">
+	<div class="card col-md-6 mx-auto">
+		<div class="card-body mx-1">
+			<h2 class="bg-primary text-center text-white border rounded my-2">Registration Form</h2>
+			<form method="POST">
+				{% csrf_token %}
+				<table class="table table-borderless">
+					{% for i in t %}
+					<tr>
+						<td>{{i}}</td>
+					</tr>
+					{% endfor %}
+				</table>
+				<input type="submit" class="form-control text-white btn btn-success" name="Subscribe">	
+			</form>		
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -26,3 +26,75 @@
 			'DailyWorkStatus',
 			]
 	
+	Creating Url for own app:
+	=========================
+	Adminapp Url:
+	=============
+	from django.urls import path,include
+	
+	urlpatterns = [
+		path('',include("DailyWorkStatus.urls")),
+	]
+
+	UserApp Url:
+	============
+	from django.urls import path
+	from DailyWorkStatus import views
+
+	urlpatterns = [
+		path("",views.home,name="hm"),
+	]
+	
+	Create function to View:
+	========================
+	def home(request):
+		return render(request,'html/home.html')
+	
+	Creating html file:
+	===================
+	Create Templates folder and in that we had created "html" folder inner of folder we have to create only html files in it
+	
+	create home.html,base.html,navbar.html
+	So here we are using bootstrap for that case we need to download the package
+	
+	Static:
+		- css
+		- js
+		- jquery
+		- images
+	- base.html
+		=> Links related to bootstrap,js,jquery
+		=> includes DTL for navbar
+		=> DTL for title,content
+	- navabar.html
+		=> only navbar lists
+	- home.html
+		=> exclude for base.html
+		=> DTL for title,content etc.,
+
+16-12-2020:
+===========
+	Good Morning to All..
+	
+	Completed Designing Registration page by using existing models
+	such as User and created wigets for that to view in register.html
+	
+	Along with that included mail sending for registered user 
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
