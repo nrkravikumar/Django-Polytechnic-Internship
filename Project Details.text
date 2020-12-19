@@ -79,11 +79,50 @@
 	Completed Designing Registration page by using existing models
 	such as User and created wigets for that to view in register.html
 	
-	Along with that included mail sending for registered user 
+	Along with that included mail sending for registered user
 	
+17-12-2020:
+===========
+	Good Morning to All....
 	
+	Errors rectification regarding in mails sending concept related to new Project[i.e., WorkLog]
 	
+18-12-2020:
+===========
+	Good Morning to All...
+	
+	mail => httpresponse
+		 => mail, record => [store]
+	
+	Login => Login.html [ generic => class based ]
+	
+	dashboard:
+	1 => Tasks Completed
+	2 => Tasks Pending
+	3 => Profile 
 
+19-12-2020:
+===========
+	Good Morning to All....
+	
+	Profile Page
+	============
+	 - Details
+	 - Updation
+	 - Signals
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
