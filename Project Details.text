@@ -119,6 +119,22 @@
 	image retrieving and image uploading
 	placing user image in navbar
 	
+22-12-2020:
+===========
+	Good Morning to All.....
+	
+	User own model:
+	===============
+	
+	class Worklog(models.Model):
+		wks = [('yes','Completed'),('no','Not Completed')]
+		date = models.DateField()
+		description = models.TextField()
+		workstatus = models.CharField(max_length=5,choices=wks)
+		m = models.ForeignKey(User,on_delete=models.CASCADE)
+	
+	created model and uploaded task into that models
+
 	
 	
 	

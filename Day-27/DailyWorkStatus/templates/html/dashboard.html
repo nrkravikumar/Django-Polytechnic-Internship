@@ -1,0 +1,27 @@
+{% extends 'html/base.html' %}
+{% block title %} Dashboard {% endblock %}
+{% block content %}
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+	<div class="row mt-2">
+		<div class="card col-md col-sm mx-2 my-2 bg-primary">
+			<h2 class="bg-success text-center text-white p-2 mt-2 border rounded">Task Completed</h2>
+			<h3 class="text-center" style="font-size: 100px">04</h3>
+		</div>
+		<div class="card col-md col-sm mx-2 my-2 bg-warning">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Task Pending</h2>
+				<h3 class="text-center" style="font-size: 100px">02</h3>
+		</div>
+		<div class="card col-md col-sm mx-2 my-2 bg-secondary">
+			<h2 class="bg-dark text-center text-white p-2 mt-2 border rounded">Profile</h2>
+		</div>
+	</div>
+</div>
+{% endblock%}

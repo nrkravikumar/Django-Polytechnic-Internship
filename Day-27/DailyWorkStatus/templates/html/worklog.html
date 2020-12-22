@@ -1,0 +1,22 @@
+{% extends 'html/base.html' %}
+{% block title %} Enter worklog {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card col-md-7 mt-2 mx-auto">
+		<h2 class="bg-warning text-white text-center mx-2 my-2 p-2">Enter Worklog</h2>
+		<div class="card-body">
+			<form method="post">
+				{% csrf_token %}
+				<table class="table table-borderless">
+					{% for n in d %}
+					<tr>
+						<td>{{n}}</td>
+					</tr>
+					{% endfor %}
+				</table>
+				<input type="submit" value="Update Worklog" class="btn btn-info btn-block">
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

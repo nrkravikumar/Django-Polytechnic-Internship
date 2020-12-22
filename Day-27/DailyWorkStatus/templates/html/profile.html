@@ -1,0 +1,49 @@
+{% extends 'html/base.html' %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+<div class="container">
+	{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible mt-3">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+	<div class="row mt-4">
+		<div class="card col-md-3 col-sm-3 mx-2 my-2">
+			<h2 class="bg-info text-center mx-2 my-2 p-2 border rounded">Profile</h2>
+			<div class="card-body">
+				<img src="{{user.exfd.impf.url}}" height="200px" width="100%"/>
+			</div>
+		</div>
+		<div class="card col-md col-sm mx-2 my-2">
+			<h2 class="bg-secondary text-center text-white mx-2 my-2 p-2 border rounded">Details</h2>
+			<div class="card-body">
+				<table class="table table-borderless">
+					<tr>
+						<th>First Name</th>
+						<td>{{user.first_name}}</td>
+					</tr>
+					<tr>
+						<th>Last Name</th>
+						<td>{{user.last_name}}</td>
+					</tr>
+					<tr>
+						<th>Username</th>
+						<td>{{user.username}}</td>
+					</tr>
+					<tr>
+						<th>Age</th>
+						<td>{{user.exfd.age}}</td>
+					</tr>
+					<tr>
+						<th>Gender</th>
+						<td>{{user.exfd.gender}}</td>
+					</tr>
+				</table>
+				<a href="{% url 'upfe' %}" class="btn btn-block btn-success">Update</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
