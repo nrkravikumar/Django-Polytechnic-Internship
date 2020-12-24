@@ -1,0 +1,37 @@
+{% extends 'html/base.html' %}
+{% block title %} Entire worklog Details{% endblock %}
+{% block content %}
+<div class="container">
+	{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+	<div class="card col-md-11 mt-2 mx-auto">
+		<h2 class="bg-warning text-white text-center mx-2 mt-2 p-2 border rounded">Worklog Details</h2>
+		<div class="card-body">
+			<a href="{% url 'crw' %}" class="btn btn-sm btn-success p-2" style="float:right">Add worklog</a>
+			<table class="table mt-2 table-hover">
+				<tr class="bg-dark text-white border rounded">
+					<th>Sno</th>
+					<th>Date</th>
+					<th>Description</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+				{% for m in y %}
+				<tr>
+					<td>{{forloop.counter}}</td>
+					<td>{{m.date}}</td>
+					<td>{{m.description}}</td>
+					<td>{{m.workstatus}}</td>
+					<td><a href="#" class="btn btn-danger">Delete</a></td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock %}

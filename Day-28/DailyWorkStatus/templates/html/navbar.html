@@ -1,0 +1,57 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="{% url 'hm' %}">
+    <img src="{% static 'images/Brand.png' %}" alt="logo" style="width:40px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ab' %}">AboutUs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ct' %}">ContactUs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'reg' %}">Register</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'dsh' %}">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'wk' %}">Worklog</a>
+    </li>
+    {% endif %}
+  </ul>
+  <ul class="navbar-nav ml-auto" style="margin-right: 110px;">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'lgn' %}">Login</a>
+    </li>
+    {% else %}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="{{user.exfd.impf.url}}" height="23px" width="25px" class="rounded-circle"/> </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="{% url 'pfe' %}">Profile</a>
+        <a class="dropdown-item" href="#">Change Password</a>
+        <a class="dropdown-item" href="{% url 'lgo' %}">Logout</a>
+      </div>
+    </li>
+    {% endif %}
+  </ul>
+  </div>
+</nav>
